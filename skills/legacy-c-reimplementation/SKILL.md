@@ -11,7 +11,7 @@ Build a new implementation from a reviewed behavioral specification. Use the spe
 
 ## Inputs
 
-Read the applicable `AGENTS.md` files and the specification named by the user. The default specification path is `docs/behavior-spec.md`.
+Read the applicable `AGENTS.md` files and the specification named by the user. The default specification path is `specs/behavior.md`.
 
 Also inspect the project build instructions, tests, fixtures, sample inputs and outputs, and any recorded decisions that apply. Do not assume that a specification is complete or approved merely because the file exists.
 

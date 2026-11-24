@@ -13,7 +13,7 @@ Create a behavioral specification that an engineer can use to implement the prog
 
 Use the repository and any supplied requirements, test results, sample files, and runtime access. Read the applicable `AGENTS.md` files first. If the repository has project instructions for another agent, read those when they apply.
 
-The default output is `docs/behavior-spec.md`. Use a different path only when the user or repository instructions specify one.
+The default output is `specs/behavior.md`. Use a different path only when the user or repository instructions specify one.
 
 ## Workflow
 
@@ -62,7 +62,7 @@ When evidence conflicts, state the conflict and list the decision needed. Do not
 
 ### 5. Write the specification
 
-Create `docs/behavior-spec.md` with these sections, adapting them to the program:
+Create `specs/behavior.md` with these sections, adapting them to the program:
 
 1. Purpose and scope
 2. Build and run environment
