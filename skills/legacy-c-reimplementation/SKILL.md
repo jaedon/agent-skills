@@ -13,7 +13,7 @@ Build a new implementation from a reviewed behavioral specification. Use the spe
 
 Read the applicable `AGENTS.md` files and the specification named by the user. The default specification path is `specs/behavior.md`.
 
-Also inspect the project build instructions, tests, fixtures, sample inputs and outputs, and any recorded decisions that apply. Do not assume that a specification is complete or approved merely because the file exists.
+Also inspect the project build instructions, tests, fixtures, sample inputs and outputs, and relevant supporting documents under `specs/` when they exist. These can include decision records, verification plans, and roadmaps. Treat `behavior.md` as the behavioral requirements source. Use supporting documents for context and decisions. Report conflicts between documents and do not silently choose which one takes precedence. Do not assume that a specification is complete or approved merely because the file exists.
 
 ## Workflow
 
@@ -24,6 +24,7 @@ Also inspect the project build instructions, tests, fixtures, sample inputs and 
 - Find contradictions, missing requirements, and choices that affect external behavior.
 - If a blocking unknown or conflict affects the design, explain the issue and ask for a decision before implementing that behavior.
 - For non-blocking unknowns, choose a safe, reversible default when possible and record the choice.
+- When implementation needs a user decision, record the question, the selected answer, its reason, and affected behavior in an existing decision document under `specs/`. If no decision document exists, create or update `specs/decisions.md`. Keep the record concise and link it to the relevant requirement when possible.
 - Do not change a public API, ABI, file format, protocol, CLI contract, or other stated external behavior unless the user requests that change.
 
 ### 2. Inspect the existing project
@@ -102,7 +103,7 @@ When behavior is unstable:
 
 When the specification, existing tests, and original program disagree, report the evidence and affected requirements. Do not silently treat one source as authoritative.
 
-Follow recorded project decisions. If no decision exists and the conflict changes external behavior, pause that part of the implementation and ask the user to choose. Record the selected behavior in the project decision log or specification, if one exists.
+Follow recorded project decisions. If no decision exists and the conflict changes external behavior, pause that part of the implementation and ask the user to choose. Record the answer using the decision-record guidance in step 1. Update `behavior.md` only when the decision changes or clarifies a behavioral requirement.
 
 ### 8. Finish and hand off
 
