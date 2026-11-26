@@ -9,6 +9,7 @@ This repository contains reusable skills for AI agents. Each skill provides guid
 | [Legacy C Specification Analysis](skills/legacy-c-spec-analysis/SKILL.md) | You need a source-backed description of a legacy C program's behavior before reimplementation. |
 | [Legacy C Reimplementation](skills/legacy-c-reimplementation/SKILL.md) | You need to build a new implementation from a reviewed behavioral specification. |
 | [Korean Business Copyediting](skills/korean-business-copyedit/SKILL.md) | You need to copy-edit Korean prose in tech or business documents while preserving facts and terminology. |
+| [Korean Markdown to PDF](skills/korean-markdown-to-pdf/SKILL.md) | You need to export Markdown documents as PDF with bundled Korean fonts and word wrapping. |
 
 ## Install
 
@@ -21,6 +22,7 @@ npx skills add <username>/skills \
   --skill legacy-c-spec-analysis \
   --skill legacy-c-reimplementation \
   --skill korean-business-copyedit \
+  --skill korean-markdown-to-pdf \
   --global \
   --agent codex claude-code opencode cursor
 ```
